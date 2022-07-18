@@ -11,8 +11,8 @@ class PostDAO:
     def __init__(self,path):
         self.path = DATA_PATH
 
-    def load_data(self):
-
+    def load_data(self)->list[Post]:
+      """Список класса Пост """
       try:
         with open(self.path, "r", encoding="utf-8") as f:
             post_data = json.load(f)
@@ -30,12 +30,18 @@ class PostDAO:
               post["likes_count"],
               post["pk"]
               ))
-          return posts
+      return posts
 
-    def get_all(self):
+    def get_all(self)->list[Post]:
+        """Получить все Посты"""
         return self.load_data()
 
-    def get_posts_all(self, user_name):
+    def get_posts_all(self, user_name)->list[Post]:
+        """Подробно 1 пост"""
+        if type(user_name) != str:
+            raise TypeError("user_name не  str")
+
+
         posts = self.load_data()
         users_posts = []
         post_lower = str(user_name).lower()
@@ -45,7 +51,12 @@ class PostDAO:
                 users_posts.append(post)
         return users_posts
 
-    def search_for_posts(self,query):
+    def search_for_posts(self,query)->list[Post]:
+       """Поиск поста по совпадению"""
+
+       if type(query) != str:
+           raise TypeError("query не  str")
+
        posts = self.load_data()
        list_post = []
        post_lower = str(query).lower()
@@ -56,7 +67,14 @@ class PostDAO:
                list_post.append(post)
        return list_post
 
-    def get_post_by_pk(self, pk):
+    def get_post_by_pk(self, pk)->Post:
+        """Получаем пост по номеру"""
+
+
+        if type(pk) != int:
+            raise TypeError("pk должно быть целым числом")
+
+
         posts = self.load_data()
         for post in posts:
             if post.pk == pk:

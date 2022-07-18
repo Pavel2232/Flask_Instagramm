@@ -10,7 +10,7 @@ class CommentDAO:
     def __init__(self,path):
          self.path = COMMENT_PATH
 
-    def load_data(self):
+    def load_data(self)->list[Comment]:
         with open(self.path, "r", encoding="utf-8") as f:
             comments_data = json.load(f)
             comments = []
@@ -23,7 +23,8 @@ class CommentDAO:
                 ))
         return comments
 
-    def get_comments_by_post_id(self, post_id):
+    def get_comments_by_post_id(self, post_id)->list[Comment]:
+        #  """Все комментарии к 1 посту"""
         posts = self.load_data()
         comments_post = []
         for post in posts:

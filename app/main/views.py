@@ -5,12 +5,14 @@ main_blueprint = Blueprint('main_blueprint', __name__, template_folder='template
 
 @main_blueprint.route("/")
 def page_index():
+### Лента постов ###
     posts = PostDAO(DATA_PATH)
     post = posts.load_data()
     return render_template('index.html', posts= post)
 
 @main_blueprint.route("/users/<username>")
 def user_feed_page(username):
+#    """Страница пользователя с его постами"""
     posts = PostDAO(DATA_PATH)
     post = posts.get_posts_all(username)
     return render_template('user-feed.html' , userpost = post)
