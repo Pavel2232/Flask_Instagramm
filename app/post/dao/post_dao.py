@@ -2,81 +2,75 @@ import json
 from app.post.dao.post import Post
 from json import JSONDecodeError
 from exceptions.data_exceptions import DataSourceError
+from app.config import DATA_DIR
 
-DATA_PATH = r"C:\Users\Павел\PycharmProjects\homeCourse2\app\data\data.json"
+DATA_PATH = DATA_DIR.joinpath("data.json")
 
 
 class PostDAO:
 
-    def __init__(self,path):
+    def __init__(self, path):
         self.path = DATA_PATH
 
-    def load_data(self)->list[Post]:
-      """Список класса Пост """
-      try:
-        with open(self.path, "r", encoding="utf-8") as f:
-            post_data = json.load(f)
-      except(FileNotFoundError, JSONDecodeError):
-          raise DataSourceError(f"Не удается получить данные из файла{self.path}")
+    def get_data(self):
+        """Форматирование json """
+        try:
+            with open(self.path, "r", encoding="utf-8") as f:
+                post_data = json.load(f)
+        except(FileNotFoundError, JSONDecodeError):
+            raise DataSourceError(f"Не удается получить данные из файла{self.path}")
+        return post_data
 
-      posts = []
-      for post in post_data:
-          posts.append(Post(
-              post["poster_name"],
-              post["poster_avatar"],
-              post["pic"],
-              post["content"],
-              post["views_count"],
-              post["likes_count"],
-              post["pk"]
-              ))
-      return posts
+    def load_data(self) -> list[Post]:
 
-    def get_all(self)->list[Post]:
+        posts = []
+        for post in self.get_data():
+            posts.append(Post(
+                post["poster_name"],
+                post["poster_avatar"],
+                post["pic"],
+                post["content"],
+                post["views_count"],
+                post["likes_count"],
+                post["pk"]
+            ))
+        return posts
+
+    def get_all(self) -> list[Post]:
         """Получить все Посты"""
         return self.load_data()
 
-    def get_posts_all(self, user_name)->list[Post]:
+    def get_posts_all(self, user_name) -> list[Post]:
         """Подробно 1 пост"""
         if type(user_name) != str:
             raise TypeError("user_name не  str")
 
-
-        posts = self.load_data()
         users_posts = []
         post_lower = str(user_name).lower()
-        for post in posts:
+        for post in self.get_all():
             post_poster_name = post.poster_name.lower()
             if post_lower in post_poster_name:
                 users_posts.append(post)
         return users_posts
 
-    def search_for_posts(self,query)->list[Post]:
-       """Поиск поста по совпадению"""
+    def search_for_posts(self, query) -> list[Post]:
+        """Поиск поста по совпадению"""
 
-       if type(query) != str:
-           raise TypeError("query не  str")
+        if type(query) != str:
+            raise TypeError("query не  str")
 
-       posts = self.load_data()
-       list_post = []
-       post_lower = str(query).lower()
+        list_post = []
+        post_lower = str(query).lower()
 
-       for post in posts:
-           post_content = post.content.lower()
-           if post_lower in post_content:
-               list_post.append(post)
-       return list_post
+        for post in self.get_all():
+            post_content = post.content.lower()
+            if post_lower in post_content:
+                list_post.append(post)
+        return list_post
 
-    def get_post_by_pk(self, pk)->Post:
+    def get_post_by_pk(self, pk):
         """Получаем пост по номеру"""
-
-
-        if type(pk) != int:
-            raise TypeError("pk должно быть целым числом")
-
-
-        posts = self.load_data()
-        for post in posts:
+        for post in self.get_all():
             if post.pk == pk:
                 return post
-
+        return None

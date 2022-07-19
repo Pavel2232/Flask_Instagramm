@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/api.log" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/app/tests/Test_dao_post.py" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/api.log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/config.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/constance.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/main/views.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/post/dao/comment.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/post/dao/post.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/run.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tests/Test_dao_post.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tests/test_api.py" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

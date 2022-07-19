@@ -1,7 +1,7 @@
 class Comment:
-    #"""Класс комментариев"""
-    def __init__(self,post_id, commenter_name,comment,pk):
+    """РљР»Р°СЃСЃ РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ"""
 
+    def __init__(self, post_id, commenter_name, comment, pk):
         self.post_id = post_id
         self.commentr_name = commenter_name
         self.comment = comment
