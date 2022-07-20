@@ -1,0 +1,2474 @@
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 18:30:45] "GET /api/posts HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:30:51] "[33mGET /api HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:30:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:36:21] "[33mGET /posts HTTP/1.1[0m" 404 -
+Exception on /posts/12222 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:29] "[35m[1mGET /posts/12222 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:39] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:41] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:42] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:43] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:44] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:45] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:45] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:36:46] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 18, in post_page
+    result_comment = comment_dao.get_comments_by_post_id(postid)
+NameError: name 'postid' is not defined
+127.0.0.1 - - [19/Jul/2022 18:37:12] "[35m[1mGET /posts/1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:37:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:37:16] "[33mGET /posts HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:37:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:37:25] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = posts_data.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:37:29] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = posts_data.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:38:07] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:38:13] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:38:13] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:38:13] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:38:23] "[33mGET /posts/122323 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:38:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:38:40] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = posts_data.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:38:42] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:39:13] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:39:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:39:16] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:39:17] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:39:26] "GET /posts/1 HTTP/1.1" 200 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:39:32] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:39:50] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:40:19] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:40:52] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:40:53] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:41:08] "[33mGET /posts HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:41:11] "[33mGET /posts HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:41:14] "[33mGET /posts/ HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:41:18] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:41:21] "[33mGET /posts/9 HTTP/1.1[0m" 404 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:41:31] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:42:45] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:42:50] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:42:55] "[33mGET /search/е HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:43:18] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:18] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:43:18] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:43:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:20] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:23] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:23] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:43:23] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:28] "GET /users/hank HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:28] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:34] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:37] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:37] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:40] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:40] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:43:40] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 18:43:42] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 18:43:42] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:43:44] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:43:51] "[33mGET /search/еда HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:43:58] "[33mGET /search/ел HTTP/1.1[0m" 404 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:46:54] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:47:32] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:48:05] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:48:07] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 26, in post_find
+    return render_template('search.html', posts=posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:48:52] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:48:58] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 18:49:07] "[33mGET /search/ HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 18:49:08] "[33mGET /search/ HTTP/1.1[0m" 404 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 18:49:11] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:01:19] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:01:26] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 23:01:38] "GET / HTTP/1.1" 200 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 59, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:02:03] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Запрос всех книг
+Запрос всех книг
+127.0.0.1 - - [19/Jul/2022 23:03:58] "GET /api/posts/1 HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    for post in post_dao:
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:04:59] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    for post in post_dao:
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:05:01] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 32, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:05:08] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 32, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:05:10] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 32, in api_posts_page
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:07:22] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 23:07:26] "[33mGET /api/posts/ HTTP/1.1[0m" 404 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 32, in api_posts_page
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:07:30] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:07:42] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:09:05] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 37, in api_posts_id_page
+    for post in post_dao:
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:09:09] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 37, in api_posts_id_page
+    for post in post_dao:
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:09:13] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 37, in api_posts_id_page
+    for post in post_dao:
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:09:41] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 37, in api_posts_id_page
+    for post in post_dao:
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:09:47] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 37, in api_posts_id_page
+    for post in post_dao.get_all():
+TypeError: 'PostDAO' object is not iterable
+127.0.0.1 - - [19/Jul/2022 23:13:17] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post["pk"] == post_id:
+TypeError: 'Post' object is not subscriptable
+127.0.0.1 - - [19/Jul/2022 23:13:35] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post["pk"] == post_id:
+TypeError: 'Post' object is not subscriptable
+127.0.0.1 - - [19/Jul/2022 23:13:40] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    posts.append(post)
+TypeError: 'Post' object is not subscriptable
+127.0.0.1 - - [19/Jul/2022 23:17:55] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    posts.append(post)
+TypeError: 'Post' object is not subscriptable
+127.0.0.1 - - [19/Jul/2022 23:19:19] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 39, in api_posts_id_page
+    return jsonify(posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:19:26] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 39, in api_posts_id_page
+    return jsonify(posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:20:08] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 39, in api_posts_id_page
+    return jsonify(posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:20:09] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 39, in api_posts_id_page
+    return jsonify(posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:20:16] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 39, in api_posts_id_page
+    return jsonify(posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:20:59] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 39, in api_posts_id_page
+    return jsonify(posts)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:04] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:10] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:11] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:26] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.load_data())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:52] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.load_data())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:54] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.load_data())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:22:55] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:23:37] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:23:50] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:24:32] "GET /api/posts HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:25:06] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:25:11] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:25:35] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PostDAO is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:25:51] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 31, in api_posts_page
+    return jsonify(post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PostDAO is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:25:52] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+127.0.0.1 - - [19/Jul/2022 23:27:41] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+127.0.0.1 - - [19/Jul/2022 23:27:46] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+127.0.0.1 - - [19/Jul/2022 23:27:59] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+127.0.0.1 - - [19/Jul/2022 23:28:00] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a list.
+127.0.0.1 - - [19/Jul/2022 23:28:14] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1734, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a PostDAO.
+127.0.0.1 - - [19/Jul/2022 23:28:34] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /api/posts [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 30, in api_posts_page
+    return jsonify(post_dao.get_all())
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 301, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 131, in dumps
+    return _json.dumps(obj, **kwargs)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\json\__init__.py", line 50, in default
+    return super().default(o)
+  File "C:\Users\Павел\AppData\Local\Programs\Python\Python310\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Post is not JSON serializable
+127.0.0.1 - - [19/Jul/2022 23:30:38] "[35m[1mGET /api/posts HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:35:27] "GET /api/posts HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:38:57] "GET /api/posts HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:39:16] "GET /api/posts HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+127.0.0.1 - - [19/Jul/2022 23:39:39] "GET /api/posts/1 HTTP/1.1" 200 -
+Запрос 1 поста
+127.0.0.1 - - [19/Jul/2022 23:39:47] "GET /api/posts/2 HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == post_id:
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:40:41] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/2 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == post_id:
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:40:42] "[35m[1mGET /api/posts/2 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == post_id:
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:40:47] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == int(post_id):
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:41:10] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == int(post_id):
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:41:11] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 23:41:21] "GET /api/posts HTTP/1.1" 200 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == int(post_id):
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:41:32] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == int(post_id):
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:42:15] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 23:43:00] "GET /api/posts HTTP/1.1" 200 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == int(post_id):
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:43:10] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 38, in api_posts_id_page
+    if post.pk == post_id:
+AttributeError: 'dict' object has no attribute 'pk'
+127.0.0.1 - - [19/Jul/2022 23:43:43] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+127.0.0.1 - - [19/Jul/2022 23:44:02] "GET /api/posts/1 HTTP/1.1" 200 -
+Запрос 1 поста
+127.0.0.1 - - [19/Jul/2022 23:44:11] "GET /api/posts/2 HTTP/1.1" 200 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:44:26] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 23:44:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:44:36] "[33mGET /serch HTTP/1.1[0m" 404 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:44:42] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:45:09] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:45:10] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:45:40] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:45:49] "GET /search HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:45:57] "GET /search HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:46:06] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:46:25] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    return render_template('search.html', posts=posts)
+NameError: name 'posts' is not defined
+127.0.0.1 - - [19/Jul/2022 23:50:38] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    return render_template('search.html', posts=posts)
+NameError: name 'posts' is not defined
+127.0.0.1 - - [19/Jul/2022 23:50:39] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    return render_template('search.html', posts=posts)
+NameError: name 'posts' is not defined
+127.0.0.1 - - [19/Jul/2022 23:50:47] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 25, in post_find
+    return render_template('search.html', posts=posts)
+NameError: name 'posts' is not defined
+127.0.0.1 - - [19/Jul/2022 23:50:48] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:51:03] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:51:41] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:51:41] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:51:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 23:51:52] "GET /search?s=е HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:51:52] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:52:26] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:52:28] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+Exception on /search [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 24, in post_find
+    posts = post_dao.search_for_posts(s)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\dao\post_dao.py", line 62, in search_for_posts
+    raise TypeError("query не  str")
+TypeError: query не  str
+127.0.0.1 - - [19/Jul/2022 23:52:29] "[35m[1mGET /search HTTP/1.1[0m" 500 -
+127.0.0.1 - - [19/Jul/2022 23:52:55] "[33mGET /search/?=е HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 23:53:01] "[33mGET /search/?=е HTTP/1.1[0m" 404 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:53:45] "[33mGET /search/?=е HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 23:53:53] "[33mGET /search/?=1 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 23:54:02] "[33mGET /search/?=еда HTTP/1.1[0m" 404 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:56:27] "[33mGET /search/?=еда HTTP/1.1[0m" 404 -
+127.0.0.1 - - [19/Jul/2022 23:56:32] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:56:38] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:56:38] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:56:40] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:56:40] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:56:55] "GET /search?s=е HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:56:55] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:57:01] "GET /search?s=еда HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:57:01] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [19/Jul/2022 23:58:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:58:48] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:58:50] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:58:50] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:58:54] "GET /search?s=е HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:58:54] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:59:00] "GET /search?s=tlf HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:59:00] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [19/Jul/2022 23:59:03] "GET /search?s=еда HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jul/2022 23:59:03] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 11, in page_index
+    return render_template('index.htmll', posts= post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.htmll
+127.0.0.1 - - [20/Jul/2022 00:07:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 00:07:36] "GET / HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 11, in page_index
+    return render_template('index.htmll', posts= post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.htmll
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 11, in page_index
+    return render_template('index.htmll', posts= post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.htmll
+127.0.0.1 - - [20/Jul/2022 00:08:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 11, in page_index
+    return render_template('index.htmll', posts= post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.htmll
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 11, in page_index
+    return render_template('index.htmll', posts= post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.htmll
+Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 11, in page_index
+    return render_template('index.htmll', posts= post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.htmll
+Запрос 1 поста
+Запрос 1 поста
+Запрос 1 поста
+Запрос 1 поста
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 01:12:19] "GET /posts/1 HTTP/1.1" 200 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 41, in api_posts_id_page
+    posts += post
+TypeError: unsupported operand type(s) for +=: 'dict' and 'dict'
+127.0.0.1 - - [20/Jul/2022 01:12:29] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 41, in api_posts_id_page
+    posts += post
+TypeError: unsupported operand type(s) for +=: 'dict' and 'dict'
+127.0.0.1 - - [20/Jul/2022 01:12:54] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\post\views.py", line 41, in api_posts_id_page
+    posts.append(post)
+TypeError: unsupported operand type(s) for +=: 'dict' and 'dict'
+127.0.0.1 - - [20/Jul/2022 01:13:26] "[35m[1mGET /api/posts/1 HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+127.0.0.1 - - [20/Jul/2022 01:13:31] "GET /api/posts/1 HTTP/1.1" 200 -
+Запрос 1 поста
+127.0.0.1 - - [20/Jul/2022 01:14:18] "GET /api/posts/5 HTTP/1.1" 200 -
+Запрос 1 поста
+127.0.0.1 - - [20/Jul/2022 01:14:48] "GET /api/posts/5 HTTP/1.1" 200 -
+Запрос 1 поста
+127.0.0.1 - - [20/Jul/2022 01:14:49] "GET /api/posts/5 HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+127.0.0.1 - - [20/Jul/2022 01:14:54] "GET /api/posts/5 HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос 1 поста
+127.0.0.1 - - [20/Jul/2022 01:15:08] "GET /api/posts/5 HTTP/1.1" 200 -
+Запрос 1 поста
+Exception on /api/posts/9 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'post_blueprint.api_posts_id_page' did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [20/Jul/2022 01:15:12] "[35m[1mGET /api/posts/9 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Exception on /api/posts/9 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'post_blueprint.api_posts_id_page' did not return a valid response. The function either returned None or ended without a return statement.
+127.0.0.1 - - [20/Jul/2022 01:15:14] "[35m[1mGET /api/posts/9 HTTP/1.1[0m" 500 -
+Запрос 1 поста
+Запрос 1 поста
+Запрос 1 поста
+Запрос 1 поста
+Exception on /api/posts/88 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'post_blueprint.api_posts_id_page' did not return a valid response. The function either returned None or ended without a return statement.
+Запрос 1 поста
+Запрос 1 поста
+Запрос 1 поста
+Запрос 1 поста
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 01:26:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:26:55] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:26:58] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:26:58] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:26:58] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:27:00] "[33mGET /app/main/templates/user-feed.html HTTP/1.1[0m" 404 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 01:29:35] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:29:35] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:29:35] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:29:38] "[33mGET /uasers/leo HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:29:45] "[33mGET /uasers/leo HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:29:46] "[33mGET /uasers/leo HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:29:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:29:48] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:29:50] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:29:50] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:29:54] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:29:54] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:29:58] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:29:58] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:29:58] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:29:59] "[33mGET /uasers/leo HTTP/1.1[0m" 404 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 01:30:06] "[33mGET /uasers/leo HTTP/1.1[0m" 404 -
+Запрос всех поста
+127.0.0.1 - - [20/Jul/2022 01:30:18] "GET /api/posts HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:30:27] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:27] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:30:30] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:30] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:30:32] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:32] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:30:36] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:36] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:30:36] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:30:39] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:40] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:30:57] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:57] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:30:59] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:30:59] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:31:02] "GET /search?s=еда HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:31:02] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:31:20] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:31:20] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:32:16] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:32:16] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос всех поста
+127.0.0.1 - - [20/Jul/2022 01:32:58] "GET /api/posts HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:32:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:33:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:33:03] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+Exception on /users/leo [GET]
+Traceback (most recent call last):
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\views.py", line 18, in user_feed_page
+    return render_template('user-feed.html' , userpost = post)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\FLASK\lib\site-packages\jinja2\environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Павел\PycharmProjects\homeCourse2\app\main\templates\user-feed.html", line 55, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+127.0.0.1 - - [20/Jul/2022 01:33:07] "[35m[1mGET /users/leo HTTP/1.1[0m" 500 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 01:33:42] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:33:42] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:35:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:35:24] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:35:28] "GET /users/hank HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:35:28] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+Запрос всех поста
+127.0.0.1 - - [20/Jul/2022 01:35:51] "GET /api/posts HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:35:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:35:58] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:35:59] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:03] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:03] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:05] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:05] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:06] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:06] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:08] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:08] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:11] "GET /posts/1 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:11] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Jul/2022 01:36:11] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:22] "GET /users/hank HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:22] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:26] "GET /posts/3 HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 01:36:26] "[36mGET /static/styles.min.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [20/Jul/2022 01:36:26] "[33mGET /img/bookmark.png HTTP/1.1[0m" 404 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 02:00:53] "GET / HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 02:03:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 02:03:44] "GET /users/leo HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 02:03:50] "GET /users/larry HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 02:03:55] "GET /users/lar HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 02:03:57] "GET /users/lar HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 02:10:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 02:10:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Jul/2022 02:10:17] "GET / HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [20/Jul/2022 02:54:36] "GET / HTTP/1.1" 200 -
