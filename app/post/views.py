@@ -26,7 +26,7 @@ def post_find():
     if s == request.args.get(" "):
         return render_template('search.html')
     posts = post_dao.search_for_posts(s)
-    return render_template('search.html', posts=posts)
+    return render_template('search.html', posts=posts[:10])
 
 
 @post_blueprint.route("/api/posts")
