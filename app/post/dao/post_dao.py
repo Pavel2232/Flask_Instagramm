@@ -1,7 +1,7 @@
 import json
 from app.post.dao.post import Post
 from json import JSONDecodeError
-from exceptions.data_exceptions import DataSourceError
+from app.exceptions.data_exceptions import DataSourceError
 from app.config import DATA_DIR
 
 DATA_PATH = DATA_DIR.joinpath("data.json")
