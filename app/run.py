@@ -1,6 +1,6 @@
 from flask import Flask
-from main.views import main_blueprint
-from post.views import post_blueprint
+from app.main.views import main_blueprint
+from app.post.views import post_blueprint
 
 app = Flask(__name__)
 
