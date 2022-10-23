@@ -1,8 +1,8 @@
 import logging
 
 from flask import Blueprint, render_template, request, jsonify, abort
-from app.config import loger_api
-from app.constance import post_dao, comment_dao
+from config import loger_api
+from constance import post_dao, comment_dao
 
 post_blueprint = Blueprint('post_blueprint', __name__, template_folder='templates')
 

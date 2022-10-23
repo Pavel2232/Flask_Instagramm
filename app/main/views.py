@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-from app.constance import post_dao
+from constance import post_dao
 
 main_blueprint = Blueprint('main_blueprint', __name__, template_folder='templates')
 

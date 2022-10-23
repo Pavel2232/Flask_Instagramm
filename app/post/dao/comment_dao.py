@@ -1,6 +1,6 @@
-from app.post.dao.comment import Comment
+from post.dao.comment import Comment
 import json
-from app.config import DATA_DIR
+from config import DATA_DIR
 
 COMMENT_PATH = DATA_DIR.joinpath('comments.json')
 
