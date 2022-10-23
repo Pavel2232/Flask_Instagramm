@@ -3,7 +3,7 @@ Description=Flask app service
 After=network.target
 
 [Service]
-WorkingDirectory=/home/pavelmazikin/application
+WorkingDirectory=/home/pavelmazikin/application/app
 ExecStart=/home/pavelmazikin/application/venv/bin/python -m gunicorn run:app -b 0.0.0.0:80 -w 4
 
 [Install]
